@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router';
-import ConfigurablePlanes from './apps/transformations/ConfigurablePlanes';
+import ConfigurablePlanes from './apps/planes/ConfigurablePlanes';
 
 function App() {
   return (
