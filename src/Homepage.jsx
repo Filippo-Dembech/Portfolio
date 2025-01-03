@@ -1,11 +1,10 @@
-import { Link } from "react-router";
 import styles from "./Homepage.module.css";
 import HomepageLink from "./HomepageLink";
 
 export default function Homepage() {
     
     const titleName = (
-        <span className={styles.name}>Filippo Dembech</span>
+        <span className={styles.name}>Filippo<br/>Dembech</span>
     )
 
     return (

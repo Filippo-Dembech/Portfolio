@@ -1,5 +1,5 @@
 .homepage {
-    padding: 0 5%;
+    padding: 5%;
     width: 100vw;
     height: 100vh;
     color: rgba(243, 183, 242, 0.8);
@@ -30,18 +30,24 @@
     .homepage {
         width: 100vw;
         height: 100vh;
-        color: rgba(243, 183, 242, 0.8);
+        color: rgb(243, 183, 242);
         font-family: "Source Code Pro";
         text-align: center;
         background: url("https://media1.tenor.com/m/46qIKFxz0_MAAAAd/8bit-city-city-gif.gif"),
-            rgba(0, 0, 0, 0.8);
+            rgba(0, 0, 0, 0.65);
         background-blend-mode: color;
         background-size: 100vw 100vh;
     }
     
     .title {
-        font-size: 2.3rem;
+        font-size: 1.5rem;
         margin: 10% 0;
+    }
+    
+    .name {
+        font-size: 2rem;
+        padding: 5% 0;
+        display: inline-block;
     }
     
     .description {

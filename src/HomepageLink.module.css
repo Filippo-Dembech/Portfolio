@@ -13,7 +13,7 @@
     height: 100%;
     padding: 2% 0;
     transition-duration: 0.2s;
-    color: rgba(243, 183, 242, 0.8);
+    color: rgb(243, 183, 242);
 }
 
 .link a:hover {
@@ -21,4 +21,10 @@
     color: purple;
     box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe,
         0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+}
+
+@media only screen and (max-width: 850px) {
+    .link {
+        font-size: 0.7rem;
+    }
 }
