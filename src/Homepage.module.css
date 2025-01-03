@@ -1,0 +1,27 @@
+.homepage {
+    width: 100vw;
+    height: 100vh;
+    color: rgba(243, 183, 242, 0.8);
+    font-family: "Source Code Pro";
+    text-align: center;
+    background: url("https://media1.tenor.com/m/f-KMXPuqT8IAAAAd/vaporwave-sunset.gif"),
+        rgba(0, 0, 0, 0.8);
+    background-blend-mode: color;
+    background-size: 100% 100%;
+}
+
+.title {
+    margin: 5% 0;
+    font-size: 4rem;
+    font-family: "Sixtyfour";
+}
+
+.name {
+    color: rebeccapurple;
+}
+
+.projectsList {
+    margin: 2% auto;
+    width: 30%;
+}
+

@@ -31,7 +31,6 @@ export default function PlaneItem({
         
         const reference = planeItemRef.current;
 
-        console.log(planeItemRef.current)
         planeItemRef.current.addEventListener("mousedown", eventHandler);
         return () => {
             reference.removeEventListener("mousedown", eventHandler);
