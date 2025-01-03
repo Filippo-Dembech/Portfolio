@@ -17,7 +17,7 @@ export default function Homepage() {
             </h1>
             <p className={styles.description}>What can I do? Click one of the link below to see one of my projects:</p>
             <ul className={styles.projectsList}>
-                <HomepageLink to="planes"/>
+                <HomepageLink to="planes">(try on Desktop)</HomepageLink>
                 <HomepageLink to="sample"/>
                 <HomepageLink to="test"/>
             </ul>

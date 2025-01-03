@@ -1,4 +1,5 @@
 .homepage {
+    padding: 0 5%;
     width: 100vw;
     height: 100vh;
     color: rgba(243, 183, 242, 0.8);
@@ -7,11 +8,11 @@
     background: url("https://media1.tenor.com/m/f-KMXPuqT8IAAAAd/vaporwave-sunset.gif"),
         rgba(0, 0, 0, 0.8);
     background-blend-mode: color;
-    background-size: 100% 100%;
+    background-size: 100vw 100vh;
 }
 
 .title {
-    margin: 5% 0;
+    margin-bottom: 5%;
     font-size: 4rem;
     font-family: "Sixtyfour";
 }
@@ -25,3 +26,31 @@
     width: 30%;
 }
 
+@media only screen and (max-width: 850px) {
+    .homepage {
+        width: 100vw;
+        height: 100vh;
+        color: rgba(243, 183, 242, 0.8);
+        font-family: "Source Code Pro";
+        text-align: center;
+        background: url("https://media1.tenor.com/m/46qIKFxz0_MAAAAd/8bit-city-city-gif.gif"),
+            rgba(0, 0, 0, 0.8);
+        background-blend-mode: color;
+        background-size: 100vw 100vh;
+    }
+    
+    .title {
+        font-size: 2.3rem;
+        margin: 10% 0;
+    }
+    
+    .description {
+        width: 70%;
+        margin: 0 auto;
+    }
+    
+    .projectsList {
+        margin: 5% auto;
+        width: 70%
+    }
+}
