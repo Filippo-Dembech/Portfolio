@@ -12,6 +12,7 @@ export default function PlaneItem({
     const [isLocalDragging, setIsLocalDragging] = useState(false);
 
     const planeItemRef = useRef(null);
+    
 
     useEffect(() => {
         function eventHandler(e) {
@@ -22,16 +23,18 @@ export default function PlaneItem({
                 !e.altKey
             ) {
                 setIsLocalDragging((val) => {
-                    console.log("now local dragging is true");
                     return true;
                 });
                 e.target.style.cursor = "grabbing";
             }
         }
+        
+        const reference = planeItemRef.current;
 
+        console.log(planeItemRef.current)
         planeItemRef.current.addEventListener("mousedown", eventHandler);
         return () => {
-            planeItemRef.current.removeEventListener("mousedown", eventHandler);
+            reference.removeEventListener("mousedown", eventHandler);
         };
     }, [isDragging]);
 
@@ -43,9 +46,11 @@ export default function PlaneItem({
             }
         }
 
+        const reference = planeItemRef.current;
+
         planeItemRef.current.addEventListener("mousemove", eventHandler);
         return () => {
-            planeItemRef.current.removeEventListener("mousemove", eventHandler);
+            reference.removeEventListener("mousemove", eventHandler);
         };
     }, [isLocalDragging, setX, setY]);
 
@@ -55,9 +60,11 @@ export default function PlaneItem({
             e.target.style.removeProperty("cursor");
         }
 
+        const reference = planeItemRef.current;
+
         planeItemRef.current.addEventListener("mouseout", eventHandler);
         return () => {
-            planeItemRef.current.removeEventListener("mouseout", eventHandler);
+            reference.removeEventListener("mouseout", eventHandler);
         };
     }, []);
 
@@ -66,10 +73,12 @@ export default function PlaneItem({
             setIsLocalDragging(false);
             e.target.style.removeProperty("cursor");
         }
+    
+        const reference = planeItemRef.current;
 
         planeItemRef.current.addEventListener("mouseup", eventHandler);
         return () => {
-            planeItemRef.current.removeEventListener("mouseup", eventHandler);
+            reference.removeEventListener("mouseup", eventHandler);
         };
     }, []);
 

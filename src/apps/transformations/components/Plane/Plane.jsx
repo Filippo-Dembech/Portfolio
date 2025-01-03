@@ -33,7 +33,6 @@ export default function Plane({ id, dashboardSettings }) {
                 ) && e.altKey
             ) {
                 setIsDragging((val) => {
-                    console.log("now global element dragging is true");
                     return true
                 });
                 e.target.style.cursor = "grabbing";
