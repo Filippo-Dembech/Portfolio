@@ -1,0 +1,9 @@
+.planeDashboard:not(:first-child), .planeDashboard:not(:last-child) {
+    margin: 20px 0;
+}
+
+.index {
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+    text-align: center;
+}

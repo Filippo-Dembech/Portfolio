@@ -1,0 +1,8 @@
+.rangeInput {
+    display: flex;
+    gap: 20px;
+}
+
+.rangeInput > label {
+    width: 120px;
+}

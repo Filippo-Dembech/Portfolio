@@ -1,0 +1,17 @@
+.dashboardsArea {
+    background: rgba(100, 100, 100, 0.3);
+    flex: 1;
+    box-shadow: 10px 0px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    overflow: auto;
+}
+
+.dashboardsArea::-webkit-scrollbar {
+    width: 0.6em;
+    height: 0.5em;
+}
+
+.dashboardsArea::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
