@@ -1,9 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router';
 
 function App() {
   return (
-    <h1>Hi there this is a React App...</h1>
+    <Routes>
+      <Route path="/" element={<h1>Hi there this is a React App...</h1>}/>
+      <Route path='/sample' element={<h1>Sample page for testing</h1>} />
+    </Routes>
   );
 }
 
